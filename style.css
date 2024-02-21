@@ -29,7 +29,7 @@
 header > h1 {
     font-family: var(--fonte-normal);
     padding-top: 10px; /*espeço entre o titulo e o topo do site*/
-    margin-bottom: 10px; /*espaço entre o titulo e o paragrafo embaixo*/
+    margin-bottom: 20px; /*espaço entre o titulo e o paragrafo embaixo*/
     font-size: 45px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
     font-weight: normal;
@@ -37,8 +37,8 @@ header > h1 {
 
 header > p {
 
-    margin: auto;
-    width: 75%;
+    padding-bottom: 30px;
+    width: 100%;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
 }
 
@@ -51,13 +51,14 @@ header {
     background-image:linear-gradient(to bottom, var(--cor3), var(--cor4));
     min-height: 130px; /*aumenta a altura minima do cabeçalho*/
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: auto;
 }
 
 
 nav {
     background-color: var(--cor4);
     padding: 5px;
+    padding-top: 0px;
     
 }
 
