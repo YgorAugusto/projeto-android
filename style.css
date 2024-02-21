@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'android';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@500&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+        --cor0: #56e1849f;
+        --cor1: #56E184;
+        --cor2: #12DB56;
+        --cor3: #0DA841;
+        --cor4: #075C23;
+        --cor5: #235C36;
+        --fonte-padrao: 'android';
+        --fonte-normal:'Roboto', sans-serif;
+
+}
+
+header > h1 {
+    font-family: var(--fonte-normal);
+    padding-top: 10px; /*espeço entre o titulo e o topo do site*/
+    margin-bottom: 10px; /*espaço entre o titulo e o paragrafo embaixo*/
+    font-size: 45px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+    font-weight: normal;
+}
+
+header > p {
+
+    margin: auto;
+    width: 75%;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    color: white;
+    background-image:linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 130px; /*aumenta a altura minima do cabeçalho*/
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+nav {
+    background-color: var(--cor4);
+    padding: 5px;
+    
+}
+
+nav > a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: black;
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    min-width: 280px; /*valor minimo que ocupa*/
+    max-width: 1000px; /*valor maximo que ocupa*/ /*deixa aquela folha branca no meio*/
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.808);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main img { /*não tem > porque significa que são todas as imagens dentro de main, perceba que as img ainda tão dentro de article e de picture la no html*/
+    width: 100%; /*faz as imagens se adaptarem à largura*/
+}
+
+.bugdroid {
+    margin: auto;
+    max-width: 300px; /*fica com a resolução legal e fica responsivo*/
+}
+
+main p { /*configura toods os paragrafos dentro de main*/
+    margin: 15px 0px; /*padrão de todos os paragrafos, mas na config do * a gente redefiniu pra 0*/
+    text-indent: 10px;
+    line-height: 1,5em; /*espaço entre as linhas*/
+}
+
+main strong {
+    color: var(--cor5);
+    font-weight: bold;
+
+}
+main h1 {
+    color: var(--cor5);
+    padding: 2px 4px ;
+    text-align: center;
+    background-image: linear-gradient(to right, transparent, var(--cor0), transparent);
+    
+}
+main h2{
+    background-image: linear-gradient(to right, var(--cor1), transparent); /*começa no cor2 e vai ate transparente*/
+    color: var(--cor5);
+    font-size: 1.3em;
+    padding: 2px 4px;
+    min-width: 300px
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold; /*negrito*/
+    background-color: var(--cor0);
+    color: var(--cor5);
+    padding: 2px 3px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+a.externo:after {
+    content: '\00a0\1F517';
+}
+
+.video {
+    
+    margin: 0px -20px 30px -20px /*-20px para a div ser da largura da folha*/;
+    padding: 20px;
+    padding-bottom: 56.5%; /*serve para encaixar o video dentro da div e retirar as bordas preteas do video*/
+    position: relative;
+}
+
+.video > iframe {
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.753);
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /*faz a margin crescer pra fora, diferente do padding que cresce pra dentro*/
+    border-radius:10px 10px 0px 0px; /*arredondando os cantos de cima do h3*/
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2; /*divide a ul em 2 colunas*/
+    list-style-type: "\1F5F8\00a0" ; /*atenção na \ sem ela não funciona o emoji*/
+    /*\00a0 é o espaço entre o emoji e a lista*/
+    /*colocar emoji nas listas não é compativel com todos navegadores*/
+}
+
+aside a {
+    background-color: var(--cor1);
+    color: green;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+footer p {
+    color: var(--cor1);
+}
+footer a {
+    color: var(--cor1);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+
