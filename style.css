@@ -25,7 +25,7 @@
 
 header > h1 {
     font-family: var(--fonte-normal);
-    padding-top: 10px; /*espeço entre o titulo e o topo do site*/
+    padding-top: 20px; /*espeço entre o titulo e o topo do site*/
     margin-bottom: 20px; /*espaço entre o titulo e o paragrafo embaixo*/
     font-size: 45px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
